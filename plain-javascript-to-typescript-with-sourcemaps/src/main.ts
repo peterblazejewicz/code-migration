@@ -1,5 +1,5 @@
 angular.element(() => {
-  angular.bootstrap(document, ['app'], {
+  angular.bootstrap(document.body, ['app'], {
     strictDi: true,
   });
 });

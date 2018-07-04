@@ -1,3 +1,4 @@
+// @ts-check
 angular.module('app', ['ui.router']);
 
 angular.module('app')
