@@ -1,9 +1,11 @@
 // @ts-check
-angular.module('app', ['ui.router']);
+/// <reference path="./loggers/MyLogger.ts" />
+
+angular.module('app', ['ui.router', 'i18n']);
 
 angular.module('app')
-.run(function() {
-  console.log('started');
-});
-
-
+  .run(['i18n', i18n => {
+    /** @type {ILogger} */
+    const logger = new loggers.MyLogger();
+    logger.log(`${i18n.helloMessage} Stranger`);
+  }]);

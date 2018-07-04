@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "allowJs": true,
-    "checkJs": false,
+    "checkJs": true,
     "declaration": false,
     "outFile": "dist/bundle.js",
     "removeComments": true,
@@ -22,6 +22,6 @@
     "src/app.module.js",
     "src/**/*.js",
     "src/**/*.ts",
-    "src/main.js",
+    "src/main.ts",
   ]
 }
