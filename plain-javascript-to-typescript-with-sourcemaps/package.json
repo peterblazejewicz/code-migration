@@ -15,6 +15,7 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.18",
     "angular": "^1.7.2"
   }
 }
