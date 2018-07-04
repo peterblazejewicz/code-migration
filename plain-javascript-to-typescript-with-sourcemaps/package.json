@@ -4,7 +4,7 @@
   "description": "- start with JavaScript - update in-place - migrate via TypeScript comments (`@ts-check`) - migrate by code convertion - output to ES5",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve && tsc -w -p ./tsconfig.debug.json"
   },
   "keywords": [],
   "author": "",
