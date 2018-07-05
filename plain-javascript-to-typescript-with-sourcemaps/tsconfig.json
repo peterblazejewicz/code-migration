@@ -20,6 +20,7 @@
   },
   "include": [
     "src/app.module.js",
+    "src/components/hello/hello.js",
     "src/**/*.js",
     "src/**/*.ts",
     "src/main.ts",
