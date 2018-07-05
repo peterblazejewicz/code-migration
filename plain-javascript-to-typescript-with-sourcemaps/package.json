@@ -4,14 +4,17 @@
   "description": "- start with JavaScript - update in-place - migrate via TypeScript comments (`@ts-check`) - migrate by code convertion - output to ES5",
   "main": "index.js",
   "scripts": {
-    "start": "serve && tsc -w -p ./tsconfig.debug.json"
+    "serve": "serve .",
+    "tsc:debug:w": "tsc -w -p ./tsconfig.debug.json",
+    "start": "run-p tsc:debug:w serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/angular": "^1.6.48",
-    "serve": "^9.1.2",
+    "npm-run-all": "^4.1.3",
+    "serve": "^9.2.0",
     "typescript": "^2.9.2"
   },
   "dependencies": {
